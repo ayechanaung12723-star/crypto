@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/Navbar";
 import Chart from "@/components/Chart";
 
@@ -45,7 +46,7 @@ export default async function CoinPage({
 
         {/* CHART */}
         <div className="bg-[#1e2329] p-4 rounded-xl mb-6">
-          <Chart symbol={coin.symbol} />
+          <Chart symbol={coin.id} />
         </div>
 
         {/* FAKE TRADE PANEL */}
